@@ -1,0 +1,355 @@
+/* styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=McLaren&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&family=McLaren&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+.main-page {
+    height: 100%;
+    width: 100%;
+    background-image: url("https://www.pixel4k.com/wp-content/uploads/2018/09/temple-buddhism-architecture-lighting-asia-4k_1538064708.jpg");
+    background-position-y: -150px;
+    background-position-x: -200px;
+    background-repeat: no-repeat;
+    background-size:2500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-page::after {
+    content: "";
+    position: absolute;
+    margin-top: 450px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(15, 30, 37, 0) 10%, rgb(11, 29, 38) 100%);
+    z-index: 1;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    margin: 25px;  
+}
+
+.nav-links {
+    padding-top: 10px;
+    padding-left: 10px;
+    gap: 25px;
+    display: flex;
+}
+.nav-links a {
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 20px;
+    color:antiquewhite;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-decoration: none;
+}
+
+.navbar .logo {
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+    color:antiquewhite;
+    font-size: 30px;
+    font-weight: 100;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-left: 135px;
+    padding-right: 150px;
+    text-align: center;
+}
+
+.icons {
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+    color:antiquewhite;
+    font-size: 25px;
+    padding-top: 10px;
+    margin-left: 60px;
+    margin-right: 30px;
+    display: flex;
+    gap: 70px;
+}
+
+.hero-section {
+    position: relative;
+    z-index: 2; /* Ensure hero content stays above the gradient overlay */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding-top: 125px;
+    margin-left: 300px;
+}
+
+.hero-section .hero-content .subheading {
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    font-style: oblique;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 400;
+    margin-left: 240px;
+    margin-top: 70px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .hero-content h1 {
+    color:rgb(255, 255, 255);
+    font-size: 90px;
+    font-family: "DM Serif Display", serif;
+    line-height: 1.1;
+    text-align: center;
+    margin-left: -280px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.hero-section .hero-content .scroll-down {
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 100;
+    font-style: oblique;
+    margin-top: 10px;
+    margin-left: 625px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+
+/* SECTIONS */
+
+.heritage-section .content-wrapper{
+    display: flex;
+}
+
+
+section {
+    background-color: rgb(11, 29, 38);
+}
+/* SECTION 1 */
+
+.image1 img {
+    margin-top: 350px;
+    margin-left: 150px;
+    height: 625px;
+    width: 525px;
+    box-shadow: 25px 25px 25px rgba(0, 0, 0, 0.3);
+}
+
+.heritage-section .text1 {
+    display: flex;
+    margin-bottom: 120px;
+    position: absolute;
+}
+
+.heritage-section .text1 .get-started {
+    color: white;
+    margin-top: 420px;
+    margin-left: 850px;
+    font-size: 20px;
+    font-family: "IM Fell DW Pica", serif;
+    font-weight:bold;
+    white-space: nowrap;
+}
+
+.heritage-section .text1 h2 {
+    margin-top: 470px;
+    margin-left: -250px;
+    font-size: 60px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: aliceblue;
+    white-space: nowrap;
+}
+
+
+.heritage-section .text1 .description {
+    text-align:start;
+    margin-top: 640px;
+    margin-left: -600px;
+    color: aliceblue;
+    font-size: 17px;
+    font-family: "McLaren", sans-serif;
+    white-space: nowrap;
+}
+
+
+/* SECTION 2 */
+
+.image2 img {
+    margin-top: 1200px;
+    margin-left: 200px;
+    height: 625px;
+    width: 525px;
+    box-shadow: 25px 25px 25px rgba(0, 0, 0, 0.3);
+}
+
+.heritage-section .text2 {
+    display: flex;
+    margin-bottom: 120px;
+    position: absolute;
+}
+
+.heritage-section .text2 .get-started {
+    color: white;
+    margin-top: 1350px;
+    margin-left: 250px;
+    font-size: 20px;
+    font-family: "IM Fell DW Pica", serif;
+    font-weight:bold;
+    white-space: nowrap;
+}
+
+.heritage-section .text2 h2 {
+    margin-top: 1400px;
+    margin-left: -300px;
+    font-size: 60px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: aliceblue;
+    white-space: nowrap;
+}
+
+
+.heritage-section .text2 .description {
+    text-align:start;
+    margin-top: 1500px;
+    margin-left: -650px;
+    color: aliceblue;
+    font-size: 17px;
+    font-family: "McLaren", sans-serif;
+    white-space: nowrap;
+}
+
+
+
+/* SECTION 3 */
+
+.image3 img {
+    margin-top: 2090px;
+    margin-left: -1270px;
+    height: 625px;
+    width: 525px;
+    box-shadow: 25px 25px 25px rgba(0, 0, 0, 0.3);
+}
+
+.heritage-section .text3 {
+    display: flex;
+    margin-bottom: 120px;
+    position: absolute;
+}
+
+.heritage-section .text3 .get-started {
+    color: white;
+    margin-top: 2140px;
+    margin-left: 850px;
+    font-size: 20px;
+    font-family: "IM Fell DW Pica", serif;
+    font-weight:bold;
+    white-space: nowrap;
+}
+
+.heritage-section .text3 h2 {
+    margin-top: 2190px;
+    margin-left: -290px;
+    font-size: 55px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: aliceblue;
+    white-space: nowrap;
+}
+
+.heritage-section .text3 .description {
+    text-align:start;
+    margin-top: 2355px;
+    margin-left: -710px;
+    color: aliceblue;
+    font-size: 16px;
+    font-family: "McLaren", sans-serif;
+    white-space: nowrap;
+}
+
+
+
+/* FOOTER SECTION */
+footer {
+    background-color: rgb(11, 29, 38);
+}
+footer .logo-footer {
+    color: antiquewhite;
+    font-size: 40px;
+    font-weight: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 300px;
+}
+
+footer p {
+    color: antiquewhite;
+    margin-top: 20px;
+    margin-left: 300px;
+    font-size: 23px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 200;
+}
+
+footer h2 {
+    color: antiquewhite;
+    margin-top: -115px;
+    margin-left: 950px;
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+footer ul {
+    margin-top: 30px;
+}
+footer ul a {
+    color: antiquewhite;
+    text-decoration: none;
+    margin-left: 950px;
+    font-size: 20px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 200;
+}
+
+footer ul li {
+    margin-bottom: 15px;
+} 

@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=McLaren&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&family=McLaren&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(15, 30, 37, 0) 85%, rgb(11, 29, 38) 105%);
+    z-index: 1; 
+}
+
+
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.main-page {
+    min-height: 100vh; /* This ensures that the main-page expands based on content height */
+    width: 100%;
+    background-image: url("/images/heritage/main-image.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.main-page::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(15, 30, 37, 0) 0%, rgb(18, 89, 88) 100%);
+    z-index: 2; /* Ensure it's behind all main content */
+}
+
+
+
+.navbar {
+    display: flex;
+    margin: 25px;
+    z-index: 2;
+    position: relative;
+}
+
+.nav-links {
+    padding-top: 10px;
+    padding-left: 10px;
+    gap: 25px;
+    display: flex;
+}
+
+.nav-links a {
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding-left: 35px;
+    padding-right: 35px;
+    text-decoration: none;
+}
+
+.navbar .logo {
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+    color: antiquewhite;
+    font-size: 30px;
+    font-weight: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-left: 135px;
+    padding-right: 150px;
+    text-align: center;
+}
+
+.icons {
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+    color: antiquewhite;
+    font-size: 25px;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: 30px;
+    display: flex;
+    gap: 70px;
+}
+
+.hero-section {
+    position: relative;
+    z-index: 5;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding-top: 125px;
+    margin-left: 300px;
+}
+
+
+.hero-section .hero-content h1 {
+    color: rgb(255, 255, 255);
+    font-size: 90px;
+    font-family: "DM Serif Display", serif;
+    line-height: 1.1;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+.hero-section .hero-content .scroll-down {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 100;
+    font-style: oblique;
+    margin-top: 10px;
+    margin-left: 850px;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        font-size: 25.5px;
+        transform: translateY(0);
+    }
+
+    50% {
+        font-size: 26px;
+        transform: translateY(-5px);
+    }
+}
+
+
+
+
+/* SECTIONS */
+
+.heritage-sites {
+    text-align: center;
+    position: relative;
+    z-index: 4;
+}
+
+.heritage-sites h2 {
+    margin-top: 250px;
+    font-family: "Oswald", sans-serif;
+    color: rgb(225, 215, 202);
+    font-size: 30px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+.site-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    height: 375px;
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card h3 {
+    margin-bottom: 20px;
+    color: antiquewhite;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 30px;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card h4 {
+    color: rgb(255, 255, 255);
+    font-family: "Titillium Web", sans-serif;
+    text-align: start;
+    font-size: 18px;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-family: "Titillium Web", sans-serif;
+    text-align: left;
+    font-size: 15px;
+    color: aliceblue;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+/* FOOTER SECTION */
+footer {
+    margin-top: 100px;
+    position: relative;
+    z-index: 5;
+    
+    background: linear-gradient(to top, rgb(18, 89, 88), rgba(255, 255, 255, 0.0));
+}
+footer .logo-footer {
+    
+    color: antiquewhite;
+    font-size: 40px;
+    font-weight: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 300px;
+}
+
+footer p {
+    color: antiquewhite;
+    margin-top: 20px;
+    margin-left: 300px;
+    font-size: 23px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 200;
+}
+
+footer h2 {
+    color: antiquewhite;
+    margin-top: -115px;
+    margin-left: 950px;
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+footer ul {
+    margin-top: 30px;
+}
+footer ul a {
+    color: antiquewhite;
+    text-decoration: none;
+    margin-left: 950px;
+    font-size: 20px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 200;
+}
+
+footer ul li {
+    margin-bottom: 15px;
+} 
